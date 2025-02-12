@@ -1,6 +1,6 @@
 ---
 titre: Interstellar  
-realisateur: Christopher Nolan  
+realisateur: christopher-nolan  
 dateSortie: 2014-11-05
 ---
 

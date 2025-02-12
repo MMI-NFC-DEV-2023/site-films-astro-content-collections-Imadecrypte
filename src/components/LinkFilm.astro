@@ -3,9 +3,9 @@ import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"films">;
 
-const file = Astro.props;
+const film = Astro.props;
 ---
 
 <a href={'/films/${film.id}'} class="text-blue-500 hover:underline">
-    {file.data.titre}
+    {film.data.titre}
 </a>

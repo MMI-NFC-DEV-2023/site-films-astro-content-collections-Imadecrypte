@@ -1,6 +1,6 @@
 ---
 titre: The Dark Knight  
-realisateur: Christopher Nolan  
+realisateur: christopher-nolan 
 dateSortie: 2008-07-18
 ---
 

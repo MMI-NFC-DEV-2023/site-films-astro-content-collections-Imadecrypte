@@ -1,6 +1,6 @@
 ---
 titre: Inception  
-realisateur: Christopher Nolan  
+realisateur: christopher-nolan  
 dateSortie: 2010-07-16
 ---
 

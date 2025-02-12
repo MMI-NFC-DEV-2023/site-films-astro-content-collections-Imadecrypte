@@ -1,6 +1,6 @@
 ---
 titre: Titanic  
-realisateur: James Cameron  
+realisateur: james-cameron  
 dateSortie: 1997-12-19
 ---
 

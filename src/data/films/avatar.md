@@ -1,6 +1,6 @@
 ---
 titre: Avatar  
-realisateur: James Cameron  
+realisateur: james-cameron  
 dateSortie: 2009-12-18
 ---
 
