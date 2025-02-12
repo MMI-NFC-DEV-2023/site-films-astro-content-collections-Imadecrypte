@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 import { formatDate } from "../../helpers";
+import LinkFilm from "../../components/LinkFilm.astro";
 
 // Générer les chemins statiques
 export async function getStaticPaths() {
@@ -11,6 +12,11 @@ export async function getStaticPaths() {
     props: { personne },
   }));
 }
+
+
+const filmsRealisateur = [...(await getCollection("films"))].filter(
+  (film) => film.data?.realisateur?.id === personne.id
+);
 
 // Récupérer la personne demandée
 const { personne } = Astro.props;
@@ -56,6 +62,21 @@ const { Content } = await render(personne);
       <div class="prose prose-lg mt-6">
         <Content />
       </div>
+
+      {
+      filmsRealisateur.length > 0 && (
+        <p class="text-lg text-gray-700">
+          <strong>🎬 Films réalisés :</strong>{" "}
+          {filmsRealisateur.map((film, index) => (
+            <>
+              <LinkFilm {...film} />
+              {index < filmsRealisateur.length - 2 ? ", " : ""}
+              {index === filmsRealisateur.length - 2 ? " et " : ""}
+            </>
+          ))}
+        </p>
+      )
+    }
 
       <a
         href="/personne"
