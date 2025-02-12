@@ -82,13 +82,13 @@ const roles =
           <ul class="list-disc pl-5">
             {roles.map((r) => (
               <li>
-                <strong>{r.role}</strong> joué par
-                <a
-                  href={`/personnes/${r.acteur.id}`}
-                  class="text-blue-600 hover:underline"
-                >
-                  {r.acteur.data.nom} // Correction ici
-                </a>
+              <strong>{r.role}</strong> joué par
+              <a
+                href={`/personnes/${r.acteur.id}`}
+                class="text-blue-600 hover:underline"
+              >
+                {r.acteur.data.nom}
+              </a>
               </li>
             ))}
           </ul>
